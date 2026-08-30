@@ -4,6 +4,52 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>TESLA WEBSITE</title>
+        <style>
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            th, td {
+                border: 1px solid #333;
+                padding: 10px;
+                text-align: left;
+            }
+
+            thead {
+                background-color: #3e5f80;
+                color: sky white;
+            }
+
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f1ea;
+                color: #2b2b2b; 
+            }
+            main {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+            h1, h2 {
+                color: black;
+            }
+            p {
+                color: purple;
+            }
+            .image-card img {
+                width: 300px;
+                height: auto;
+                display: block;
+            }
+            .image-grid {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+        </style>
     </head>
     <body>
         <main>
@@ -16,10 +62,83 @@
          building real systems that solve everyday problems. Beyond that am working toward becoming a nuero surgeon
          in my future.      
             </section>
-            <section><h2>MY HOBBIES</h2>
+            <section><h2 id="hobbies">MY HOBBIES</h2>
          Outside my academic world, am passionate about soccer. I love playing soccer whenever I get time.
          I am an Arsenal fan through every heartful moments, whether wining or losing. Football gives me a 
          healthy balance alondside my academic life
+        </section>
+        <section>
+        <h2>MY FAVOURITE COURSE MODULES</h2>
+        <p style="color:#4a5b6e; font-size:0.95rem; margin-bottom:0.4rem">
+            These are three modules from my Information Systems course that I find most interesting and enjoyable.
+        </p>
+
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Module Name</th>
+                        <th>Module Code</th>
+                        <th>WHY I LIKE IT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Web Application Development</td>
+                        <td>ITM 1131</td>
+                        <td>I love building things I can see and interact with. This module teaches me the skills to create websites and apps</td>
+                    </tr>
+                    <tr>
+                        <td>Database Management Systems</td>
+                        <td>ITM 1142</td>
+                        <td>This module covers the principles and practices of database design, implementation, and management.</td>
+                    </tr>
+                    <tr>
+                        <td>Software Engineering</td>
+                        <td>ITM 1153</td>
+                        <td>This module introduces software development methodologies, project management, and best practices in software engineering.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </section>
+        <section>
+            <h2>GALLERY</h2>
+            <P> style="color:#4a5b6e; font-size:0.95rem; margin-bottom:0.8rem">These are three modules from my Information Systems course that I find most interesting and enjoyable.</P>
+
+            <div class="image-grid">
+                
+                <figure class="image-card">
+                    <img
+                    src="images/muni.jpg"
+                    alt="Muni University campus a modern building with green surroundings, where I study Information Systems"
+                    loading="lazy"
+                    />
+                    <figcaption class="caption"> Muni university, my home for learning</figcaption>
+                </figure>
+
+                <figure class="image-card">
+                    <img
+                    src="images/arsenal.jpg"
+                    alt="Arsenal football club logo, my favorite football team"
+                    loading="lazy"
+                    />
+                    <figcaption class="caption"> Arsenal Football Club, my favorite team</figcaption>
+                    </figure>
+
+                  
+            </div>
+                 
+        </section>
+
+        <section>
+            <h2>Quick Links</h2>
+
+            <ul>
+                <li><a href="https://www.muni.ac.ug/" target="_blank">Muni University</a></li>
+                <li><a href="https://www.arsenal.com/" target="_blank">Arsenal Football Club</a></li>
+                <li><a href="https://www.tesla.com/" target="_blank">Tesla Official Website</a></li>
+                <li><a href="#hobbies">Jump to My HOBBIES</a></li>
         </section>
         </main>
         <footer>2026 Kwezi Mugarra Trevor.Built for ITM 1131 Web Application Development&copy;</footer>
