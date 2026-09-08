@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KWEZI TREVOR WEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+        table {
+            border-spacing: 2px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .image-row {
+            display: flex;
+            gap: 40px;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>WELCOME TO MY OFFICIAL WEBSITE</h1>
+
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#hobbies">My Hobbies</a>
+
+            <a href="#courses">My courses</a>
+
+            <a href="#contact">Contact Me</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="about" class="card">
+            <h2>ABOUT</h2>
+
+            <p>
+                My name is Kwezi Mugarra Trevor, am currently a year student pursuing a bachelor's degree in Information
+            Systems in Muni university. Before joining university, I attended Cambridge College of st.Mbaaga, where
+             I studied from S.1 to S.2 (2019-2025).
+             </p>
+
+             <p>
+                My long term goal is to become a software engineer and building
+             real systems that solve everday problems. Beyond that, am working towards becoming a nuero-surgeon
+             in my future.
+             </p>
+        </section>
+
+        <section id="hobbies" class="card">
+            <h2>MY HOBBIES</h2>
+
+            <p>
+                Outside my academic world, am passionate about soccer. I love playing soccer with friends whener I get
+            free time. I am an Arsenal fan through every heartful moments, whether winning or losing. Soccer gives
+            me a healthy balance alongside my academic life.
+            </p>
+        </section>
+
+        <section id="courses">
+            <h2>A TABLE SHOWING MY COURSE MODULES AND WHY I LIKE THEM</h2>
+    <table>
+
+        <thead>
+            <tr>
+                <th>COURSE MODULE</th>
+                <th>WHY I LIKE IT</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>Web Application Development</td>
+                <td>I like to learn how to create and design websites and other different platforms</td>
+            </tr>
+
+            <tr>
+                <td>Computer Literacy</td>
+                <td>I am passionate about mastering how a computer coordinates with all its hardware</td>
+            </tr>
+
+            <tr>
+                <td>Discrete Mathematics</td>
+                <td>I always feel and believe that mathematics is part of my everyday life</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+        </section>
+
+    <section class="image-row">
+
+        <img src="images/arsenaltrevor.png"
+        alt="2025/2026 EPL Champions" width="300">
+
+        <img src="images/kwezitrevor.png" 
+        alt="Yes Centre Nsabya" width="300">
+
+    </section>
+
+    <section id="contact">
+
+        <h2>CONTACT ME</h2>
+
+        <form action="#" method="post">
+
+            <div>
+                <label for="name">Name</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required
+                >
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                >
+            </div>
+
+            <div>
+                <label for="message">Message:</label>
+
+                                             <textarea
+                                                id="message"
+                                                name="message"
+                                                placeholder="Enter your message"
+                                                required
+                                            ></textarea>
+            </div>
+
+            <button type="submit">Send Message</button>
+
+            </form>
+
+        </section>
+
+        <section>
+
+            <p>
+                <a href="#hobbies">jump to My Hobbies</a>
+            </p>
+
+            <p>
+                <a href="https://www.premierleague.com" target="_blank">Premier League Official Site</a>
+            </p>
+
+            </section>
+    </main>
+
+    <footer>
+
+        <p>
+            &copy; 2026 Kwezi Mugarra Trevor. All rights reserved.</footer
+        </p>
+
+    </footer>
+
+</body>
+</html>
