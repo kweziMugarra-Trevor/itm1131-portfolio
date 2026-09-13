@@ -1,149 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>KWEZI MUGARRA TREVOR WEBSITE</title>
-        <style>
-            table {
-                border-collapse: collapse;
-                width: 100%;
-            }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KWEZI TREVOR WEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
 
-            th, td {
-                border: 1px solid #333;
-                padding: 10px;
-                text-align: left;
-            }
+        table {
+            border-spacing: 2px;
+        }
 
-            thead {
-                background-color: #3e5f80;
-                color: white;
-            }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        
+    </style>
+</head>
 
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-                background-color: #f4f1ea;
-                color: #2b2b2b; 
-            }
-            main {
-                max-width: 800px;
-                margin: 0 auto;
-                padding: 20px;
-            }
-            h1, h2 {
-                color: black;
-            }
-            p {
-                color: purple;
-            }
-            .image-card img {
-                width: 300px;
-                height: auto;
-                display: block;
-            }
-            .image-grid {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 20px;
-            }
-        </style>
-    </head>
-    <body>
-        <main>
-            <header>
-            <h1>WELCOME, TO MY OFFICIAL WEBSITE</h1>
-        <P>This is my official website to be completely opened</P>
-            </header>        
-            <section><h2>ABOUT ME</h2>
-         My name is Kwezi Mugarra Trevor, and Iam currently a first year student at Muni university pursuing a abachelor's
-         degree in Information Systems. Before joining university, I attended Cambridge college of st.Mbaaga, where I
-         studied from senior one to senior six(2019-2025).My long term goal is to become a software engineer and
-         building real systems that solve everyday problems. Beyond that am working toward becoming a nuero surgeon
-         in my future.      
-            </section>
-            <section><h2 id="hobbies">MY HOBBIES</h2>
-         Outside my academic world, am passionate about soccer. I love playing soccer whenever I get time.
-         I am an Arsenal fan through every heartful moments, whether wining or losing. Football gives me a 
-         healthy balance alondside my academic life
+<body>
+
+    <header>
+        <h1>WELCOME TO MY OFFICIAL WEBSITE</h1>
+
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#hobbies">My Hobbies</a>
+
+            <a href="#courses">My courses</a>
+
+            <a href="#contact">Contact Me</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="about" class="card">
+            <h2>ABOUT</h2>
+
+            <p>
+                My name is Kwezi Mugarra Trevor, am currently a year student pursuing a bachelor's degree in Information
+            Systems in Muni university. Before joining university, I attended Cambridge College of st.Mbaaga, where
+             I studied from S.1 to S.2 (2019-2025).
+             </p>
+
+             <p>
+                My long term goal is to become a software engineer and building
+             real systems that solve everday problems. Beyond that, am working towards becoming a nuero-surgeon
+             in my future.
+             </p>
         </section>
-        <section>
-        <h2>MY FAVOURITE COURSE MODULES</h2>
-        <p style="color:#4a5b6e; font-size:0.95rem; margin-bottom:0.4rem">
-            These are three modules from my Information Systems course that I find most interesting and enjoyable.
-        </p>
 
-        <div class="table-wrap">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Module Name</th>
-                        <th>Module Code</th>
-                        <th>WHY I LIKE IT</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Web Application Development</td>
-                        <td>ITM 1131</td>
-                        <td>I love building things I can see and interact with. This module teaches me the skills to create websites and apps</td>
-                    </tr>
-                    <tr>
-                        <td>Database Management Systems</td>
-                        <td>ITM 1142</td>
-                        <td>This module covers the principles and practices of database design, implementation, and management.</td>
-                    </tr>
-                    <tr>
-                        <td>Software Engineering</td>
-                        <td>ITM 1153</td>
-                        <td>This module introduces software development methodologies, project management, and best practices in software engineering.</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+        <section id="hobbies" class="card">
+            <h2>MY HOBBIES</h2>
+
+            <p>
+                Outside my academic world, am passionate about soccer. I love playing soccer with friends whener I get
+            free time. I am an Arsenal fan through every heartful moments, whether winning or losing. Soccer gives
+            me a healthy balance alongside my academic life.
+            </p>
         </section>
-        <section>
-            <h2>GALLERY</h2>
-            <P> style="color:#4a5b6e; font-size:0.95rem; margin-bottom:0.8rem">These are three modules from my Information Systems course that I find most interesting and enjoyable.</P>
 
-            <div class="image-grid">
-                
-                <figure class="image-card">
-                    <img
-                    src="images/muni.jpg"
-                    alt="Muni University campus a modern building with green surroundings, where I study Information Systems"
-                    loading="lazy"
-                    />
-                    <figcaption class="caption"> Muni university, my home for learning</figcaption>
-                </figure>
+        <section id="courses">
+            <h2>A TABLE SHOWING MY COURSE MODULES AND WHY I LIKE THEM</h2>
+    <table>
 
-                <figure class="image-card">
-                    <img
-                    src="images/arsenal.jpg"
-                    alt="Arsenal football club logo, my favorite football team"
-                    loading="lazy"
-                    />
-                    <figcaption class="caption"> Arsenal Football Club, my favorite team</figcaption>
-                    </figure>
+        <thead>
+            <tr>
+                <th>COURSE MODULE</th>
+                <th>WHY I LIKE IT</th>
+            </tr>
+        </thead>
 
-                  
+        <tbody>
+
+            <tr>
+                <td>Web Application Development</td>
+                <td>I like to learn how to create and design websites and other different platforms</td>
+            </tr>
+
+            <tr>
+                <td>Computer Literacy</td>
+                <td>I am passionate about mastering how a computer coordinates with all its hardware</td>
+            </tr>
+
+            <tr>
+                <td>Discrete Mathematics</td>
+                <td>I always feel and believe that mathematics is part of my everyday life</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+        </section>
+
+    <section class="image-row">
+
+        <img src="images/arsenaltrevor.png"
+        alt="2025/2026 EPL Champions">
+
+        <img src="images/kwezitrevor.png"
+        alt="Garrison Park, Small Heath">
+
+        <img src="images/Nsambya Yes Center.png"
+        alt="Trevor Tesla">
+
+    </section>
+
+    <section id="contact">
+
+        <h2>CONTACT ME</h2>
+
+        <form action="#" method="post">
+
+            <div>
+                <label for="name">Name</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required
+                >
             </div>
-                 
+
+            <div>
+                <label for="email">Email:</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                >
+            </div>
+
+            <div>
+                <label for="message">Message:</label>
+
+                                             <textarea
+                                                id="message"
+                                                name="message"
+                                                placeholder="Enter your message"
+                                                required
+                                            ></textarea>
+            </div>
+
+            <button type="submit">Send Message</button>
+
+            </form>
+
         </section>
 
         <section>
-            <h2>Quick Links</h2>
 
-            <ul>
-                <li><a href="https://www.muni.ac.ug/" target="_blank">Muni University</a></li>
-                <li><a href="https://www.arsenal.com/" target="_blank">Arsenal Football Club</a></li>
-                <li><a href="https://www.tesla.com/" target="_blank">Tesla Official Website</a></li>
-                <li><a href="#hobbies">Jump to My HOBBIES</a></li>
-            </ul>
-        </section>
-        </main>
-        <footer>2026 Kwezi Mugarra Trevor.Built for ITM 1131 Web Application Development&copy;</footer>
-    </body>
+            <p>
+                <a href="#hobbies">jump to My Hobbies</a>
+            </p>
+
+            <p>
+                <a href="https://www.premierleague.com" target="_blank">Premier League Official Site</a>
+            </p>
+
+            </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Kwezi Mugarra Trevor. All rights reserved.</p>
+    </footer>
+
+</body>
 </html>
