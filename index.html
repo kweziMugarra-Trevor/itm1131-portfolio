@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KWEZI TREVOR WEBSITE</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
 
+    <title>KWEZI TREVOR WEBSITE</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- My own CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
         table {
             border-spacing: 2px;
         }
@@ -15,14 +22,14 @@
             border: 1px solid black;
             padding: 8px;
         }
-        
     </style>
 </head>
 
 <body>
 
     <header>
-        <h1>WELCOME TO MY OFFICIAL WEBSITE</h1>
+        <h1 class="text-center">WELCOME TO MY OFFICIAL WEBSITE</h1>
+        <h2 class="text-center">My profile</h2>
 
         <nav>
             <a href="#about">About Me</a>
@@ -37,12 +44,12 @@
     <main>
 
         <section id="about" class="card">
-            <h2>ABOUT</h2>
+            <h2>ABOUT ME</h2>
 
             <p>
                 My name is Kwezi Mugarra Trevor, am currently a year student pursuing a bachelor's degree in Information
             Systems in Muni university. Before joining university, I attended Cambridge College of st.Mbaaga, where
-             I studied from S.1 to S.2 (2019-2025).
+             I studied from S.1 to S.6 (2019-2025).
              </p>
 
              <p>
@@ -96,20 +103,65 @@
 
         </section>
 
-    <section class="image-row">
+   
+<section class="image-row py-4">
 
-        <img src="images/arsenaltrevor.png"
-        alt="2025/2026 EPL Champions">
+    <h2 class="text-center mb-4">MY GALLERY</h2>
 
-        <img src="images/kwezitrevor.png"
-        alt="Garrison Park, Small Heath">
+    <div class="row g-4">
 
-        <img src="images/Nsambya Yes Center.png"
-        alt="Trevor Tesla">
+        <div class="col-12 col-md-4">
+            <div class="card my-gallery-card h-100">
+                <img src="images/arsenaltrevor.png"
+                     class="card-img-top"
+                     alt="2025/2026 EPL Champions">
 
-    </section>
+                <div class="card-body">
+                    <h3 class="card-title">Football</h3>
+                    <p class="card-text">
+                        A picture representing my interest in football.
+                    </p>
+                </div>
+            </div>
+        </div>
 
-    <section id="contact">
+
+        <div class="col-12 col-md-4">
+            <div class="card my-gallery-card h-100">
+                <img src="images/kwezitrevor.png"
+                     class="card-img-top"
+                     alt="Garrison Park, Small Heath">
+
+                <div class="card-body">
+                    <h3 class="card-title">My Interests</h3>
+                    <p class="card-text">
+                        A picture from one of my memorable experiences.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-12 col-md-4">
+            <div class="card my-gallery-card h-100">
+                <img src="images/Nsambya Yes Center.png"
+                     class="card-img-top"
+                     alt="Trevor Tesla">
+
+                <div class="card-body">
+                    <h3 class="card-title">Personal Gallery</h3>
+                    <p class="card-text">
+                        A picture included in my personal profile gallery.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="contact">
 
         <h2>CONTACT ME</h2>
 
